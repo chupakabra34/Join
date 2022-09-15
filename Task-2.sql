@@ -7,3 +7,4 @@ create table ORDERS
     amount       int,
     FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
+create index customer_idx on orders(customer_id));
